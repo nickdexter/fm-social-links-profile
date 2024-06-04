@@ -28,6 +28,7 @@ main {
 h1 {
     color: var(--wht);
     text-align: center;
+    font-size: 28px;
     margin: 0;
 }
 
@@ -49,12 +50,13 @@ a {
     padding: 15px;
     border-radius: 10px;
     font-weight: 600;
-    margin: 20px;
+    margin-block: 20px;
 }
 
 a:hover {
     color: var(--blk);
     background-color: var(--grn);
+    transition: all 0.3s;
 }
 
 #avatar {
@@ -74,7 +76,7 @@ a:hover {
 #quote {
     color: var(--wht);
     font-weight: 400;
-    margin: 36px;
+    margin-block: 36px;
 }
 
 .wrapper {
@@ -83,4 +85,19 @@ a:hover {
     width: 370px;
     padding: 50px;
     border-radius: 10px;
+}
+
+@media (max-width:375px) {
+    .wrapper {
+        width: 75%;
+        padding: 25px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    #quote {
+        font-size: 14px;
+    }
 }
